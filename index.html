@@ -1,1 +1,127 @@
-hola
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sneaker Shop - Accueil</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+            background-color: #444;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+        }
+        .banner {
+            background: url('banner.jpg') no-repeat center center/cover;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+        .banner h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        .products, .reviews {
+            padding: 20px;
+            text-align: center;
+        }
+        .products h2, .reviews h2 {
+            margin-bottom: 20px;
+        }
+        .product-list, .review-list {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .product, .review {
+            border: 1px solid #ddd;
+            margin: 10px;
+            padding: 20px;
+            width: 200px;
+        }
+        .product img {
+            width: 100%;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sneaker Shop</h1>
+    </header>
+    <nav>
+        <a href="#">Accueil</a>
+        <a href="#">Produits</a>
+        <a href="#">Nouveautés</a>
+        <a href="#">Contact</a>
+    </nav>
+    <section class="banner">
+        <h1>Trouvez vos Sneakers préférées</h1>
+    </section>
+    <section class="products">
+        <h2>Produits Populaires</h2>
+        <div class="product-list">
+            <div class="product">
+                <img src="sneaker1.jpg" alt="Sneaker 1">
+                <h3>Sneaker 1</h3>
+                <p>Prix: 100€</p>
+            </div>
+            <div class="product">
+                <img src="sneaker2.jpg" alt="Sneaker 2">
+                <h3>Sneaker 2</h3>
+                <p>Prix: 120€</p>
+            </div>
+            <div class="product">
+                <img src="sneaker3.jpg" alt="Sneaker 3">
+                <h3>Sneaker 3</h3>
+                <p>Prix: 150€</p>
+            </div>
+        </div>
+    </section>
+    <section class="reviews">
+        <h2>Avis des Clients</h2>
+        <div class="review-list">
+            <div class="review">
+                <p>"Super qualité et livraison rapide!" - Julien</p>
+            </div>
+            <div class="review">
+                <p>"Les meilleures sneakers que j'ai jamais achetées." - Marie</p>
+            </div>
+            <div class="review">
+                <p>"Service client au top!" - Alexandre</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Sneaker Shop. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
