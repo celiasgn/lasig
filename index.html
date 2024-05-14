@@ -19,11 +19,11 @@
             text-align: center;
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: space-between;
+            padding: 10px 50px;
         }
         header img {
             height: 50px;
-            margin-right: 20px;
         }
         nav {
             display: flex;
@@ -62,6 +62,12 @@
             margin-bottom: 20px;
             font-size: 2em;
             color: #333;
+        }
+        .section p {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 1.2em;
+            color: #555;
         }
         .product-list, .review-list {
             display: flex;
@@ -107,18 +113,23 @@
     <header>
         <img src="https://via.placeholder.com/50x50?text=S" alt="Logo Basket">
         <h1>Sneaker Shop</h1>
+        <nav>
+            <a href="#accueil">Accueil</a>
+            <a href="#qui-sommes-nous">Qui sommes-nous ?</a>
+            <a href="#nos-offres">Nos Offres</a>
+            <a href="#nouveautes">Nouveautés</a>
+            <a href="#mon-compte">Mon Compte</a>
+        </nav>
     </header>
-    <nav>
-        <a href="#">Accueil</a>
-        <a href="#">Produits</a>
-        <a href="#">Nouveautés</a>
-        <a href="#">Contact</a>
-    </nav>
-    <section class="banner">
+    <section class="banner" id="accueil">
         <h1>Trouvez vos Sneakers préférées</h1>
     </section>
-    <section class="section products">
-        <h2>Produits Populaires</h2>
+    <section class="section" id="qui-sommes-nous">
+        <h2>Qui sommes-nous ?</h2>
+        <p>Bienvenue chez Sneaker Shop, votre destination en ligne pour les meilleures sneakers. Nous sommes passionnés par les chaussures de sport et nous nous engageons à offrir des produits de haute qualité et un service client exceptionnel.</p>
+    </section>
+    <section class="section products" id="nos-offres">
+        <h2>Nos Offres</h2>
         <div class="product-list">
             <div class="product">
                 <img src="https://via.placeholder.com/300x300?text=Sneaker+1" alt="Sneaker 1">
@@ -137,19 +148,26 @@
             </div>
         </div>
     </section>
-    <section class="section reviews">
-        <h2>Avis des Clients</h2>
-        <div class="review-list">
-            <div class="review">
-                <p>"Super qualité et livraison rapide!" - Julien</p>
+    <section class="section" id="nouveautes">
+        <h2>Nouveautés</h2>
+        <p>Découvrez les dernières tendances et les nouvelles collections de sneakers disponibles dans notre magasin.</p>
+        <div class="product-list">
+            <div class="product">
+                <img src="https://via.placeholder.com/300x300?text=Sneaker+4" alt="Sneaker 4">
+                <h3>Sneaker 4</h3>
+                <p>Prix: 130€</p>
             </div>
-            <div class="review">
-                <p>"Les meilleures sneakers que j'ai jamais achetées." - Marie</p>
-            </div>
-            <div class="review">
-                <p>"Service client au top!" - Alexandre</p>
+            <div class="product">
+                <img src="https://via.placeholder.com/300x300?text=Sneaker+5" alt="Sneaker 5">
+                <h3>Sneaker 5</h3>
+                <p>Prix: 140€</p>
             </div>
         </div>
+    </section>
+    <section class="section" id="mon-compte">
+        <h2>Mon Compte</h2>
+        <p>Accédez à votre compte pour suivre vos commandes, gérer vos informations personnelles et plus encore.</p>
+        <a href="#" style="background-color: #b22222; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">Se connecter</a>
     </section>
     <footer>
         <p>&copy; 2024 Sneaker Shop. Tous droits réservés.</p>
